@@ -169,7 +169,7 @@ button {
   font-size: 18px;
   line-height: 18px;
   text-align: center;
-  color: var(--accent-color); 
+  color: var(--accent-color);
 }
 
 .header__theme-menu-button:hover {
