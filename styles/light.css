@@ -5,6 +5,8 @@
   --accent-color: #FF8DCB;
   --title-color: #FFC2E6;
   --title-text-color: #353430;
+  --theme-color: #353430;
+  --button-hover-color: rgb(50 49 45 / 0.4);
 }
 
 .theme-light .header__rec {
@@ -12,35 +14,35 @@
 }
 
 .theme-light .header__theme-menu-button {
-  color: #353430;
+  color: var(--theme-color);
 }
 
 .theme-light .header__theme-menu-button:hover {
-  border: 1px solid rgb(50 49 45 / 0.4);
+  border: 1px solid var(--button-hover-color);
 }
 
 .theme-light .header__theme-menu-button:focus {
-  border-bottom: 1px solid #353430;
+  border-bottom: 1px solid var(--theme-color);
 }
 
 .theme-light .header__theme-menu-button_active {
-  border: 1px solid #353430;
+  border: 1px solid var(--theme-color);
 }
 
 .theme-light .decorated-zone::before,
 .theme-light .decorated-zone::after,
 .theme-light .frame::before,
 .theme-light .frame::after {
-  border-color: #353430;
+  border-color: var(--theme-color);
 }
 
 .theme-light .question-section__title {
-  color: #353430;
+  color: var(--theme-color);
 }
 
 .theme-light .question-section_type_gallery .question-section__title {
-  color: #353430;
-  background-color: #FF8DCB;
+  color: var(--theme-color);
+  background-color: var(--accent-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -51,6 +53,8 @@
     --accent-color: #FF8DCB;
     --title-color: #FFC2E6;
     --title-text-color: #353430;
+    --theme-color: #353430;
+    --button-hover-color: rgb(50 49 45 / 0.4);
   }
   
   :root:not(.theme-dark) .header__rec {
@@ -58,34 +62,34 @@
   }
   
   :root:not(.theme-dark) .header__theme-menu-button {
-    color: #353430;
+    color: var(--theme-color);
   }
   
   :root:not(.theme-dark) .header__theme-menu-button:hover {
-    border: 1px solid rgb(50 49 45 / 0.4);
+    border: 1px solid var(--button-hover-color);
   }
   
   :root:not(.theme-dark) .header__theme-menu-button:focus {
-    border-bottom: 1px solid #353430;
+    border-bottom: 1px solid var(--theme-color);
   }
   
   :root:not(.theme-dark) .header__theme-menu-button_active {
-    border: 1px solid #353430;
+    border: 1px solid var(--theme-color);
   }
   
   :root:not(.theme-dark) .decorated-zone::before,
   :root:not(.theme-dark) .decorated-zone::after,
   :root:not(.theme-dark) .frame::before,
   :root:not(.theme-dark) .frame::after {
-    border-color: #353430;
+    border-color: var(--theme-color);
   }
   
   :root:not(.theme-dark) .question-section__title {
-    color: #353430;
+    color: var(--theme-color);
   }
   
-  :root:not(.theme-dark) .question-section_type_gallery .question-section__title {
-    color: #353430;
-    background-color: #FF8DCB;
+  .question-section__title_type_gallery {
+    color: var(--theme-color);
+    background-color: var(--accent-color);
   }
 }
