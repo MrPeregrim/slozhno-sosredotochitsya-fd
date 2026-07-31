@@ -40,11 +40,6 @@ button {
   cursor: pointer;
 }
 
-.title-decor {
-  background-color: var(--accent-color);
-  color: var(--title-text-color);
-}
-
 .page {
   min-height: 100vh;
   background-color: var(--bg-color);
@@ -244,8 +239,6 @@ button {
 }
 
 .question-section_type_gallery .question-section__title {
-  background-color: var(--accent-color);
-  color: var(--title-text-color);
   margin-bottom: 10px;
 }
 
@@ -271,6 +264,11 @@ button {
   color: var(--title-color);
   text-shadow: 3px 3px 0 var(--accent-color);
   text-align: center;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
 }
 
 @media (width >= 768px) {
@@ -326,7 +324,7 @@ button {
   
   .question-section_type_advice {
     display: grid;
-    grid-template-columns: minmax(236px, 315px) 1fr;
+    grid-template-columns: minmax(236px, 1fr) 2fr;
     gap: 20px;
   }
   
@@ -336,10 +334,6 @@ button {
   
   .question-section_type_reasons .question-section__title {
     margin-bottom: 0;
-  }
-  
-  .question-section_type_advice {
-    grid-template-columns: minmax(236px, 235px) 1fr;
   }
   
   .question-section_type_reasons .question-section__text {
@@ -447,30 +441,29 @@ button {
     width: auto;
   }
   
-  .question-section_type_factors {
-    display: grid;
-  }
-  
   .question-section__card {
     display: grid;
     gap: 10px;
   }
   
   .question-section_type_advice {
-    margin-top: -20px;
-    grid-template-columns: minmax(325px, 235px) 1fr;
+    gap: 10px;
+  }
+  
+  .question-section__card_last {
+    margin-bottom: 0;
   }
   
   .question-section_type_factors .question-section__title {
     max-inline-size: 315px;
   }
   
-  .question-section_type_factors .question-section__card {
+  .question-section_type_advice .question-section__subtitle {
     margin-bottom: 20px;
   }
   
-  .question-section__card_no-margin {
-    margin-bottom: 0;
+  .question-section__text {
+    margin-bottom: 20px;
   }
   
   .question-section_type_factors .question-section__text {
@@ -481,10 +474,6 @@ button {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     align-items: start;
-  }
-  
-  .question-section_type_advice {
-    gap: 10px;
   }
   
   .question-section__subheading {

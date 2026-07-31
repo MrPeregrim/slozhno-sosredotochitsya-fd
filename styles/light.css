@@ -30,19 +30,12 @@
 }
 
 .theme-light .decorated-zone::before,
-.theme-light .decorated-zone::after,
-.theme-light .frame::before,
-.theme-light .frame::after {
+.theme-light .decorated-zone::after {
   border-color: var(--theme-color);
 }
 
 .theme-light .question-section__title {
   color: var(--theme-color);
-}
-
-.theme-light .question-section_type_gallery .question-section__title {
-  color: var(--theme-color);
-  background-color: var(--accent-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -78,18 +71,11 @@
   }
   
   :root:not(.theme-dark) .decorated-zone::before,
-  :root:not(.theme-dark) .decorated-zone::after,
-  :root:not(.theme-dark) .frame::before,
-  :root:not(.theme-dark) .frame::after {
+  :root:not(.theme-dark) .decorated-zone::after {
     border-color: var(--theme-color);
   }
   
   :root:not(.theme-dark) .question-section__title {
     color: var(--theme-color);
-  }
-  
-  .question-section__title_type_gallery {
-    color: var(--theme-color);
-    background-color: var(--accent-color);
   }
 }
